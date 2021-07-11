@@ -11,5 +11,8 @@
     "back": "yarn workspace @hiking-buddies-webapp/back",
     "front": "yarn workspace @hiking-buddies-webapp/front",
     "common": "yarn workspace @hiking-buddies-webapp/common"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.5"
   }
 }

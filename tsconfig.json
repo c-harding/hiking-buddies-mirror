@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "outDir": "./dist",
+    "baseUrl": ".",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "module": "CommonJS",
+    "target": "ES2019",
+    "sourceMap": true,
+    "lib": [
+      "esnext"
+    ],
+    /* Strict Type-Checking Options */
+    "strict": true,
+    /* Advanced Options */
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "@monorepo/common/*": [
+        "common/src/*"
+      ]
+    }
+  },
+  "references": [
+    {
+      "path": "front"
+    },
+    {
+      "path": "back"
+    },
+    {
+      "path": "common"
+    }
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
