@@ -1,0 +1,15 @@
+{
+  "name": "hiking-buddies-webapp",
+  "version": "0.0.1",
+  "private": true,
+  "workspaces": [
+    "common",
+    "back",
+    "front"
+  ],
+  "scripts": {
+    "back": "yarn workspace @hiking-buddies-webapp/back",
+    "front": "yarn workspace @hiking-buddies-webapp/front",
+    "common": "yarn workspace @hiking-buddies-webapp/common"
+  }
+}
