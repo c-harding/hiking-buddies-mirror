@@ -4,11 +4,12 @@
     "project": "./tsconfig.json"
   },
   "extends": [
-    "eslint:recommended",
     "airbnb-base",
     "prettier",
+    "eslint:recommended",
+    "plugin:import/typescript",
     "plugin:@typescript-eslint/recommended",
-    "prettier/@typescript-eslint"
+    "plugin:@typescript-eslint/recommended-requiring-type-checking"
   ],
   "plugins": [
     "@typescript-eslint"
@@ -19,5 +20,22 @@
   },
   "ignorePatterns": [
     "dist"
-  ]
+  ],
+  "rules": {
+    "import/prefer-default-export": "off",
+    "import/extensions": "off",
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": "error",
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": "error",
+    "no-useless-constructor": "off",
+    "@typescript-eslint/no-useless-constructor": "error",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "varsIgnorePattern": "^_"
+      }
+    ],
+    "no-underscore-dangle": "off"
+  }
 }

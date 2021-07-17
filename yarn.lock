@@ -53,6 +53,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@hiking-buddies-webapp/back@workspace:back"
   dependencies:
+    http-methods-enum: ^0.1.1
     typescript: ^4.3.5
   languageName: unknown
   linkType: soft
@@ -1100,6 +1101,7 @@ __metadata:
     eslint: ^7.30.0
     eslint-config-airbnb-base: ^14.2.1
     eslint-config-prettier: ^8.3.0
+    eslint-import-resolver-node: ^0.3.4
     eslint-plugin-import: ^2.23.4
     eslint-plugin-node: ^11.1.0
     eslint-plugin-promise: ^5.1.0
@@ -1112,6 +1114,13 @@ __metadata:
   version: 2.8.9
   resolution: "hosted-git-info@npm:2.8.9"
   checksum: cf4dfac9b94aa601ae889e7e3cb5a7021a8517b517f933fec0b3a8dc5002edece01475c82f70cc18a051a5a8105bcb2fbe4e64f0b8f321eb99054a49a75b5aa3
+  languageName: node
+  linkType: hard
+
+"http-methods-enum@npm:^0.1.1":
+  version: 0.1.1
+  resolution: "http-methods-enum@npm:0.1.1"
+  checksum: 628e235a847c19426a062f6d2de6a19dddd246da6f892b208b40873c6e607cb9d9766d588e2bae2ac0ba19295dee042e936a442121e73c13fd5d60de48ce7cbe
   languageName: node
   linkType: hard
 

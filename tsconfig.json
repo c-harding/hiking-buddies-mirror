@@ -9,7 +9,8 @@
     "target": "ES2019",
     "sourceMap": true,
     "lib": [
-      "esnext"
+      "esnext",
+      "dom"
     ],
     /* Strict Type-Checking Options */
     "strict": true,

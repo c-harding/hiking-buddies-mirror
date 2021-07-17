@@ -10,7 +10,8 @@
   "scripts": {
     "back": "yarn workspace @hiking-buddies-webapp/back",
     "front": "yarn workspace @hiking-buddies-webapp/front",
-    "common": "yarn workspace @hiking-buddies-webapp/common"
+    "common": "yarn workspace @hiking-buddies-webapp/common",
+    "lint": "eslint"
   },
   "devDependencies": {
     "@types/node": "^16.3.1",
@@ -19,6 +20,7 @@
     "eslint": "^7.30.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-node": "^0.3.4",
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
