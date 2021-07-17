@@ -16,9 +16,9 @@ export function keys<T extends Record<string, unknown>>(obj: T): (keyof T)[] {
 
 export function mapObject<A extends Record<string, unknown>, B extends Record<keyof A, unknown>>(
   obj: A,
-  f: <K extends keyof A>(x: A[K]) => B[K],
+  f: <K extends keyof A>(x: A[K], key: K) => B[K],
 ): B {
-  return fromEntries<B>(keys(obj).map((key) => [key, f(obj[key])]));
+  return fromEntries<B>(keys(obj).map((key) => [key, f(obj[key], key)]));
 }
 
 type Defined<T> = T extends undefined ? never : T;

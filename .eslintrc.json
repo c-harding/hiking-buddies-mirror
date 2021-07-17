@@ -36,6 +36,8 @@
         "varsIgnorePattern": "^_"
       }
     ],
-    "no-underscore-dangle": "off"
+    "no-underscore-dangle": "off",
+    "no-continue": "off",
+    "no-restricted-syntax": "off"
   }
 }
