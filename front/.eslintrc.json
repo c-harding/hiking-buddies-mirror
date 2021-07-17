@@ -1,0 +1,21 @@
+{
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "extends": [
+    "next",
+    "plugin:react-hooks/recommended"
+  ],
+  "plugins": [
+  ],
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "ignorePatterns": [
+    "dist"
+  ],
+  "rules": {
+    "sort-imports": "off"
+  }
+}

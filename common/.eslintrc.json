@@ -1,0 +1,19 @@
+{
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "extends": [
+    "airbnb-base",
+  ],
+  "plugins": [
+  ],
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "ignorePatterns": [
+    "dist"
+  ],
+  "rules": {
+  }
+}

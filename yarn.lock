@@ -137,8 +137,9 @@ __metadata:
   dependencies:
     "@types/node": ^16.3.3
     "@types/react": 17.0.14
-    eslint: 7.30.0
-    eslint-config-next: 11.0.1
+    eslint: ^7.30.0
+    eslint-config-next: ^11.0.1
+    eslint-plugin-react-hooks: ^4.2.0
     next: 11.0.1
     react: 17.0.2
     react-dom: 17.0.2
@@ -1621,7 +1622,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-next@npm:11.0.1":
+"eslint-config-next@npm:^11.0.1":
   version: 11.0.1
   resolution: "eslint-config-next@npm:11.0.1"
   dependencies:
@@ -1806,6 +1807,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-plugin-simple-import-sort@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "eslint-plugin-simple-import-sort@npm:7.0.0"
+  peerDependencies:
+    eslint: ">=5.0.0"
+  checksum: 51fc6b675220681fd88e8fb7c0b9ff9b3b38e2c060999c72da7b0dee469cfe3fdbe1284374f2ade5015ee93d4d59eaf2d29c6185d4131b30aa057d9c9dec9483
+  languageName: node
+  linkType: hard
+
 "eslint-scope@npm:^5.1.1":
   version: 5.1.1
   resolution: "eslint-scope@npm:5.1.1"
@@ -1850,7 +1860,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:7.30.0, eslint@npm:^7.30.0":
+"eslint@npm:^7.30.0":
   version: 7.30.0
   resolution: "eslint@npm:7.30.0"
   dependencies:
@@ -2332,6 +2342,7 @@ fsevents@~2.3.1:
     eslint-plugin-import: ^2.23.4
     eslint-plugin-node: ^11.1.0
     eslint-plugin-promise: ^5.1.0
+    eslint-plugin-simple-import-sort: ^7.0.0
     prettier: ^2.3.2
     typescript: ^4.3.5
   languageName: unknown
