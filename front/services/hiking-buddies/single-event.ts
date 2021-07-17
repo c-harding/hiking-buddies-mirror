@@ -1,4 +1,4 @@
-import { HTMLElement, parse } from 'node-html-parser';
+import { HTMLElement, NodeType, parse } from 'node-html-parser';
 
 import { EventDetails } from './event-details';
 
@@ -27,11 +27,16 @@ class PageParser {
 
   private static removeBlankHtml(snippet: string): string {
     const htmlContent = parse(snippet);
-    if (
-      htmlContent.textContent.trim() === '' &&
-      htmlContent.querySelector(':not(div):not(p):not(br)') === null
-    ) {
-      return '';
+    if (htmlContent.rawText.trim() === '') {
+      // querySelectorAll also matches text nodes, which may be blank
+      // If there are no elements other than p, div and br, and there is no text, then the box is blank
+      // This is because e.g. images could be included without text.
+      const found = htmlContent
+        .querySelectorAll(':not(div):not(p):not(br)')
+        .filter((x) => x.nodeType === NodeType.ELEMENT_NODE);
+      if (found.length === 0) {
+        return '';
+      }
     }
     return snippet;
   }

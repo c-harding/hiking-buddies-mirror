@@ -55,8 +55,12 @@ function EventBody({
             timeStyle: 'short',
           })}
         </p>
-        <h2>Description</h2>
-        <SanitizedHTML html={event.description} />
+        {event.description && (
+          <>
+            <h2>Description</h2>
+            <SanitizedHTML html={event.description} />
+          </>
+        )}
         {event.instructions && (
           <>
             <h2>Instructions</h2>
